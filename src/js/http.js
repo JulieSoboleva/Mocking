@@ -1,9 +1,8 @@
 export default function fetchData(url) {
   if (url !== '') {
-    // const myBlob = new Blob(['{}']);
-    // const myOptions = { status: 200, statusText: "SuperSmashingGreat!" };
-    // const myResponse = new Response(myBlob, myOptions);
-    return '{}';
+    const myBlob = new Blob(['{level: 10}']);
+    const response = new Response(myBlob, {status: 200});
+    return response;
   }
-  return null;
+  return new Response();
 }

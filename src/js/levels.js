@@ -7,5 +7,5 @@ export default function getLevel(userId) {
         return `Ваш текущий уровень: ${response.level}`;
     }
 
-    return `Информация об уровне временно недоступна`;
+    return 'Информация об уровне временно недоступна';
 }
